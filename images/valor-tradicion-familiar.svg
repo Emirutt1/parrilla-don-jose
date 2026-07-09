@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Tradición familiar">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#a8562a"/><stop offset="1" stop-color="#3a2114"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#d9541e" stroke-opacity="0.5" stroke-width="2" rx="10"/>
+  <text x="400" y="315" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="bold" text-anchor="middle" fill="#f4ead6">Tradición familiar</text>
+</svg>
