@@ -339,8 +339,8 @@ h1, h2, h3, h4 {
 }
 
 @keyframes hero-zoom {
-  from { transform: scale(1.06) translate(0, 0); }
-  to   { transform: scale(1.16) translate(-1.5%, -1.2%); }
+  from { transform: scale(1.16) translate(0, 0); }
+  to   { transform: scale(1.24) translate(-1.5%, -1.2%); }
 }
 @keyframes hero-flicker {
   0%, 100% { filter: brightness(1)    saturate(1.05); }
