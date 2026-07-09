@@ -25,9 +25,7 @@ Hecho con **HTML5, CSS3 y JavaScript vanilla** — sin frameworks ni librerías.
 ├── js/
 │   └── nav.js              Navegación mobile, scrollspy y libro del menú
 ├── images/                 Fotos (.jpg) e ilustraciones de respaldo (.svg)
-├── servidor.ps1            Servidor local para probar en PC y celular
-└── (páginas sueltas)       menu.html, nosotros.history.html, contacto.html,
-                            reservar.html — versiones multipágina previas
+└── servidor.ps1            Servidor local para probar en PC y celular
 ```
 
 ## 🚀 Cómo verlo
