@@ -309,6 +309,46 @@ h1, h2, h3, h4 {
   padding: 5rem 1rem;
 }
 
+/* Fondo: foto de fuego con zoom lento y parpadeo (imagen animada por CSS).
+   Compatible con PC, Android e iOS; sin video = liviano y sin autoplay. */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #0a0705;
+}
+.hero__bg::before {
+  content: '';
+  position: absolute;
+  inset: -6%;
+  background: url('../images/hero-fuego.jpg') center/cover no-repeat;
+  transform-origin: center;
+  animation: hero-zoom 24s ease-in-out infinite alternate,
+             hero-flicker 4s ease-in-out infinite;
+  will-change: transform, filter;
+}
+/* Oscurecido para que el texto sea legible sobre el fuego */
+.hero__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(8, 5, 3, 0.55) 0%, rgba(8, 5, 3, 0.32) 38%, rgba(8, 5, 3, 0.74) 100%),
+    radial-gradient(120% 95% at 50% 42%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+@keyframes hero-zoom {
+  from { transform: scale(1.06) translate(0, 0); }
+  to   { transform: scale(1.16) translate(-1.5%, -1.2%); }
+}
+@keyframes hero-flicker {
+  0%, 100% { filter: brightness(1)    saturate(1.05); }
+  25%      { filter: brightness(1.09) saturate(1.16); }
+  50%      { filter: brightness(0.95) saturate(1); }
+  75%      { filter: brightness(1.05) saturate(1.12); }
+}
+
 /* Viñeta para oscurecer los bordes y dar profundidad cinematográfica */
 .hero::after {
   content: '';
@@ -326,11 +366,11 @@ h1, h2, h3, h4 {
   max-width: 760px;
 }
 
-/* ---------- Fondo de brasas del hero ---------- */
+/* ---------- Brasas del hero (sobre la foto de fuego) ---------- */
 .hero__fuego {
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 2;
   overflow: hidden;
   pointer-events: none;
 }
@@ -391,6 +431,7 @@ h1, h2, h3, h4 {
   }
   .hero__brasa { opacity: 0; }
   .hero__lecho { opacity: 0.85; }
+  .hero__bg::before { animation: none; }
 }
 
 .hero__eyebrow {
@@ -411,6 +452,16 @@ h1, h2, h3, h4 {
 
 .hero__titulo span {
   color: var(--brasa-viva);
+}
+
+/* Colores y sombras para asegurar legibilidad del texto sobre el fuego */
+.hero__eyebrow {
+  color: #ffdcae;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+.hero__frase {
+  color: #fbf1df;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
 }
 
 .hero__frase {
@@ -650,11 +701,11 @@ h1, h2, h3, h4 {
   height: 720px;
   perspective: 2400px;
   border-radius: 4px 12px 12px 4px;
-  background: #cdae82;
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.32);
+  background: #241a0c;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.4);
 }
 
-/* Cada hoja del libro = una categoría del menú */
+/* Cada hoja del libro = una categoría del menú (marrón #33250C) */
 .libro__pagina {
   position: absolute;
   inset: 0;
@@ -662,8 +713,8 @@ h1, h2, h3, h4 {
   padding: 2.4rem 2.6rem 2.6rem;
   border-radius: 4px 12px 12px 4px;
   background:
-    linear-gradient(90deg, rgba(90, 61, 41, 0.28) 0, rgba(90, 61, 41, 0) 5%),
-    linear-gradient(135deg, #f1e3c6 0%, #e6d2a8 100%);
+    linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0, rgba(0, 0, 0, 0) 6%),
+    #33250C;
   transform-origin: left center;
   backface-visibility: hidden;
   opacity: 0;
@@ -677,8 +728,26 @@ h1, h2, h3, h4 {
   z-index: 2;
 }
 
+/* Texto legible sobre las hojas oscuras */
 .libro__pagina .menu-seccion__titulo {
   margin-top: 0;
+  color: #f2b866;
+  border-bottom-color: rgba(242, 184, 102, 0.35);
+}
+.libro__pagina .menu-item {
+  border-bottom-color: rgba(242, 184, 102, 0.16);
+}
+.libro__pagina .menu-item__nombre {
+  color: #f6e8d1;
+}
+.libro__pagina .menu-item__desc {
+  color: #cdb18a;
+}
+.libro__pagina .menu-item__precio {
+  color: #f2b866;
+}
+.libro__pagina .menu-item__puntos {
+  border-bottom-color: rgba(242, 184, 102, 0.32);
 }
 
 /* ---------- Tapa dura del libro (portada) ---------- */

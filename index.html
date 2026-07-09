@@ -37,7 +37,8 @@
 
   <!-- ===================== Inicio / Hero ===================== -->
   <section class="hero" id="inicio">
-    <!-- Fondo cinematográfico: brasas y chispas flotando en la oscuridad. -->
+    <!-- Fondo: foto de fuego animada (zoom + parpadeo) con brasas ascendentes -->
+    <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__fuego" aria-hidden="true">
       <div class="hero__lecho"></div>
       <span class="hero__brasa" style="--x:6%;  --s:3px; --d:8s;   --delay:0s;   --dx:24px;  --blur:1.5px; --op:.6"></span>
@@ -74,17 +75,6 @@
         <a href="#menu" class="btn btn--linea">Ver el menú</a>
       </div>
     </div>
-  </section>
-
-  <!-- ===================== Bienvenida ===================== -->
-  <section class="seccion contenedor">
-    <h2 class="titulo-seccion">Nuestra casa, tu asado</h2>
-    <div class="divisor"></div>
-    <p style="max-width: 760px; margin: 0 auto; text-align: center; color: var(--cuero); font-size: 1.1rem;">
-      Somos una parrilla de barrio con alma de campo. Trabajamos cortes seleccionados,
-      achuras frescas y el fuego justo de la leña de quebracho. Sentate, destapá un buen
-      Malbec y dejá que el asador haga lo suyo.
-    </p>
   </section>
 
   <!-- ===================== Platos destacados ===================== -->
@@ -141,22 +131,18 @@
       <div class="valores">
         <div class="valor">
           <img src="images/valor-fuego-lena.jpg" onerror="this.onerror=null;this.src='images/valor-fuego-lena.svg'" alt="Fuego de leña ardiendo en la parrilla" loading="lazy" decoding="async" class="valor__foto" />
-          <div class="valor__icono">🔥</div>
           <h3 class="valor__titulo">Fuego de leña</h3>
           <p>Nada de gas ni atajos. Solo brasas de quebracho y el tiempo que cada corte necesita.</p>
         </div>
         <div class="valor">
-          <div class="valor__icono">🥩</div>
           <h3 class="valor__titulo">Carne seleccionada</h3>
           <p>Trabajamos con productores de confianza para llevar a tu mesa cortes de primera calidad.</p>
         </div>
         <div class="valor">
-          <div class="valor__icono">🍷</div>
           <h3 class="valor__titulo">Buena mesa</h3>
           <p>Vinos argentinos, ambiente cálido y la sobremesa que solo un buen asado sabe regalar.</p>
         </div>
         <div class="valor">
-          <div class="valor__icono">🤝</div>
           <h3 class="valor__titulo">Tradición familiar</h3>
           <p>Tres generaciones cuidando el mismo secreto: cocinar como en casa, para tratarte como familia.</p>
         </div>
@@ -177,7 +163,6 @@
           <div class="tapa">
             <div class="tapa__marco">
               <span class="tapa__eyebrow">Carta de la casa</span>
-              <div class="tapa__emblema">🔥</div>
               <h3 class="tapa__menu">Menú</h3>
               <div class="tapa__linea"></div>
               <h2 class="tapa__marca">Parrilla<br />Don José</h2>
@@ -189,158 +174,158 @@
 
         <!-- Achuras -->
         <div class="libro__pagina">
-      <h3 class="menu-seccion__titulo">🔥 Achuras</h3>
-      <div class="menu-lista">
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Chorizo criollo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.200</span></div>
-          <p class="menu-item__desc">Embutido casero, jugoso y bien condimentado, dorado a la parrilla.</p>
+          <h3 class="menu-seccion__titulo">Achuras</h3>
+          <div class="menu-lista">
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Chorizo criollo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.200</span></div>
+              <p class="menu-item__desc">Embutido casero, jugoso y bien condimentado, dorado a la parrilla.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Morcilla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.000</span></div>
+              <p class="menu-item__desc">Suave y cremosa, con su punto justo de especias.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Mollejas al limón</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$8.900</span></div>
+              <p class="menu-item__desc">Crocantes por fuera, tiernas por dentro, con un chorrito de limón.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Chinchulines</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$6.500</span></div>
+              <p class="menu-item__desc">Trenzados y dorados a fuego lento hasta quedar bien crujientes.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Riñones al verdeo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$5.800</span></div>
+              <p class="menu-item__desc">Salteados con cebolla de verdeo y un toque de vino blanco.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Provoleta a la parrilla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$5.500</span></div>
+              <p class="menu-item__desc">Queso provolone fundido con orégano y aceite de oliva.</p>
+            </div>
+          </div>
         </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Morcilla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.000</span></div>
-          <p class="menu-item__desc">Suave y cremosa, con su punto justo de especias.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Mollejas al limón</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$8.900</span></div>
-          <p class="menu-item__desc">Crocantes por fuera, tiernas por dentro, con un chorrito de limón.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Chinchulines</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$6.500</span></div>
-          <p class="menu-item__desc">Trenzados y dorados a fuego lento hasta quedar bien crujientes.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Riñones al verdeo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$5.800</span></div>
-          <p class="menu-item__desc">Salteados con cebolla de verdeo y un toque de vino blanco.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Provoleta a la parrilla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$5.500</span></div>
-          <p class="menu-item__desc">Queso provolone fundido con orégano y aceite de oliva.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Cortes -->
-    <div class="libro__pagina">
-      <h3 class="menu-seccion__titulo">🥩 Cortes</h3>
-      <div class="menu-lista">
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Vacío</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$11.500</span></div>
-          <p class="menu-item__desc">Corte magro y sabroso, cocido lento para lograr su costra dorada.</p>
+        <!-- Cortes -->
+        <div class="libro__pagina">
+          <h3 class="menu-seccion__titulo">Cortes</h3>
+          <div class="menu-lista">
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Vacío</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$11.500</span></div>
+              <p class="menu-item__desc">Corte magro y sabroso, cocido lento para lograr su costra dorada.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Asado de tira</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$12.000</span></div>
+              <p class="menu-item__desc">La costilla vacuna clásica, jugosa y con ese sabor inconfundible.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Entraña</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$14.500</span></div>
+              <p class="menu-item__desc">Tierna y muy sabrosa, sellada a fuego fuerte y servida a punto.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Bife de chorizo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$15.000</span></div>
+              <p class="menu-item__desc">Corte grueso, jugoso y de textura suave. Uno de los preferidos.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Ojo de bife</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$16.000</span></div>
+              <p class="menu-item__desc">Marmoleado y tierno, con todo el sabor concentrado del centro de la costilla.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Bife de lomo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$17.500</span></div>
+              <p class="menu-item__desc">El corte más magro y tierno, ideal para quienes buscan suavidad.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Matambre de cerdo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$10.500</span></div>
+              <p class="menu-item__desc">Fino y crocante, dorado lentamente hasta quedar bien dorado.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Parrillada Don José (para 2)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$28.000</span></div>
+              <p class="menu-item__desc">Selección de achuras y cortes surtidos para compartir junto al fuego.</p>
+            </div>
+          </div>
         </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Asado de tira</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$12.000</span></div>
-          <p class="menu-item__desc">La costilla vacuna clásica, jugosa y con ese sabor inconfundible.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Entraña</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$14.500</span></div>
-          <p class="menu-item__desc">Tierna y muy sabrosa, sellada a fuego fuerte y servida a punto.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Bife de chorizo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$15.000</span></div>
-          <p class="menu-item__desc">Corte grueso, jugoso y de textura suave. Uno de los preferidos.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Ojo de bife</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$16.000</span></div>
-          <p class="menu-item__desc">Marmoleado y tierno, con todo el sabor concentrado del centro de la costilla.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Bife de lomo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$17.500</span></div>
-          <p class="menu-item__desc">El corte más magro y tierno, ideal para quienes buscan suavidad.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Matambre de cerdo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$10.500</span></div>
-          <p class="menu-item__desc">Fino y crocante, dorado lentamente hasta quedar bien dorado.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Parrillada Don José (para 2)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$28.000</span></div>
-          <p class="menu-item__desc">Selección de achuras y cortes surtidos para compartir junto al fuego.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Guarniciones -->
-    <div class="libro__pagina">
-      <h3 class="menu-seccion__titulo">🥗 Guarniciones</h3>
-      <div class="menu-lista">
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Ensalada criolla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.500</span></div>
-          <p class="menu-item__desc">Tomate, cebolla y morrón con aceite de oliva y un toque de vinagre.</p>
+        <!-- Guarniciones -->
+        <div class="libro__pagina">
+          <h3 class="menu-seccion__titulo">Guarniciones</h3>
+          <div class="menu-lista">
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Ensalada criolla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.500</span></div>
+              <p class="menu-item__desc">Tomate, cebolla y morrón con aceite de oliva y un toque de vinagre.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Papas fritas caseras</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.000</span></div>
+              <p class="menu-item__desc">Cortadas a mano y bien crocantes. Se pueden pedir con provenzal.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Papas a la provenzal</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.500</span></div>
+              <p class="menu-item__desc">Con ajo y perejil fresco salteados al momento.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Ensalada mixta</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.500</span></div>
+              <p class="menu-item__desc">Lechuga, tomate y zanahoria, fresca y liviana.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Batatas al rescoldo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.200</span></div>
+              <p class="menu-item__desc">Asadas entre las brasas, dulces y ahumadas.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Puré de calabaza</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.800</span></div>
+              <p class="menu-item__desc">Cremoso y casero, con un toque de manteca y nuez moscada.</p>
+            </div>
+          </div>
         </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Papas fritas caseras</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.000</span></div>
-          <p class="menu-item__desc">Cortadas a mano y bien crocantes. Se pueden pedir con provenzal.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Papas a la provenzal</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.500</span></div>
-          <p class="menu-item__desc">Con ajo y perejil fresco salteados al momento.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Ensalada mixta</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.500</span></div>
-          <p class="menu-item__desc">Lechuga, tomate y zanahoria, fresca y liviana.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Batatas al rescoldo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.200</span></div>
-          <p class="menu-item__desc">Asadas entre las brasas, dulces y ahumadas.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Puré de calabaza</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.800</span></div>
-          <p class="menu-item__desc">Cremoso y casero, con un toque de manteca y nuez moscada.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Postres -->
-    <div class="libro__pagina">
-      <h3 class="menu-seccion__titulo">🍮 Postres</h3>
-      <div class="menu-lista">
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Flan casero con dulce de leche</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.500</span></div>
-          <p class="menu-item__desc">Con crema o dulce de leche… o pisá el barro y pedí las dos.</p>
+        <!-- Postres -->
+        <div class="libro__pagina">
+          <h3 class="menu-seccion__titulo">Postres</h3>
+          <div class="menu-lista">
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Flan casero con dulce de leche</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.500</span></div>
+              <p class="menu-item__desc">Con crema o dulce de leche… o pisá el barro y pedí las dos.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Panqueque de dulce de leche</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.800</span></div>
+              <p class="menu-item__desc">Relleno generoso y flambeado a la vista.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Queso y dulce (vigilante)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.000</span></div>
+              <p class="menu-item__desc">El postre del asador: queso fresco con dulce de membrillo o batata.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Helado artesanal (2 bochas)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.900</span></div>
+              <p class="menu-item__desc">Consultá los sabores del día. Siempre hay dulce de leche granizado.</p>
+            </div>
+          </div>
         </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Panqueque de dulce de leche</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.800</span></div>
-          <p class="menu-item__desc">Relleno generoso y flambeado a la vista.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Queso y dulce (vigilante)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.000</span></div>
-          <p class="menu-item__desc">El postre del asador: queso fresco con dulce de membrillo o batata.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Helado artesanal (2 bochas)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.900</span></div>
-          <p class="menu-item__desc">Consultá los sabores del día. Siempre hay dulce de leche granizado.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Bebidas -->
-    <div class="libro__pagina">
-      <h3 class="menu-seccion__titulo">🍷 Bebidas</h3>
-      <div class="menu-lista">
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Malbec de la casa (botella)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$9.500</span></div>
-          <p class="menu-item__desc">Tinto joven de Mendoza, ideal para acompañar la carne.</p>
+        <!-- Bebidas -->
+        <div class="libro__pagina">
+          <h3 class="menu-seccion__titulo">Bebidas</h3>
+          <div class="menu-lista">
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Malbec de la casa (botella)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$9.500</span></div>
+              <p class="menu-item__desc">Tinto joven de Mendoza, ideal para acompañar la carne.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Copa de vino tinto</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$2.800</span></div>
+              <p class="menu-item__desc">Malbec o Cabernet Sauvignon.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Cerveza artesanal (pinta)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.200</span></div>
+              <p class="menu-item__desc">Rubia, roja o negra, bien tirada y fresca.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Gaseosa / Agua saborizada</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$1.800</span></div>
+              <p class="menu-item__desc">Línea completa, con y sin azúcar.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Agua mineral</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$1.500</span></div>
+              <p class="menu-item__desc">Con o sin gas.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__cabecera"><span class="menu-item__nombre">Limonada casera</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$2.500</span></div>
+              <p class="menu-item__desc">Con menta y jengibre, bien fría.</p>
+            </div>
+          </div>
         </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Copa de vino tinto</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$2.800</span></div>
-          <p class="menu-item__desc">Malbec o Cabernet Sauvignon.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Cerveza artesanal (pinta)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.200</span></div>
-          <p class="menu-item__desc">Rubia, roja o negra, bien tirada y fresca.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Gaseosa / Agua saborizada</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$1.800</span></div>
-          <p class="menu-item__desc">Línea completa, con y sin azúcar.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Agua mineral</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$1.500</span></div>
-          <p class="menu-item__desc">Con o sin gas.</p>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item__cabecera"><span class="menu-item__nombre">Limonada casera</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$2.500</span></div>
-          <p class="menu-item__desc">Con menta y jengibre, bien fría.</p>
-        </div>
-      </div>
-    </div>
 
       </div><!-- /.libro__hojas -->
 
@@ -402,14 +387,12 @@
       <div>
         <ul class="info-lista">
           <li>
-            <span class="info-lista__icono">📍</span>
             <div>
               <div class="info-lista__titulo">Dirección</div>
               <div class="info-lista__dato">Av. de los Asadores 1234<br />Palermo, Ciudad Autónoma de Buenos Aires</div>
             </div>
           </li>
           <li>
-            <span class="info-lista__icono">🕑</span>
             <div>
               <div class="info-lista__titulo">Horarios de atención</div>
               <div class="info-lista__dato">
@@ -421,21 +404,18 @@
             </div>
           </li>
           <li>
-            <span class="info-lista__icono">📞</span>
             <div>
               <div class="info-lista__titulo">Teléfono</div>
               <div class="info-lista__dato">(011) 4567-8900</div>
             </div>
           </li>
           <li>
-            <span class="info-lista__icono">💬</span>
             <div>
               <div class="info-lista__titulo">WhatsApp</div>
               <div class="info-lista__dato">+54 9 11 2345-6789</div>
             </div>
           </li>
           <li>
-            <span class="info-lista__icono">✉️</span>
             <div>
               <div class="info-lista__titulo">Email</div>
               <div class="info-lista__dato">hola@parrilladonjose.com.ar</div>
@@ -445,9 +425,9 @@
 
         <div class="info-lista__titulo" style="margin-bottom: 0.5rem;">Seguinos</div>
         <div class="redes">
-          <a href="#" class="red" aria-label="Instagram">📷 Instagram</a>
-          <a href="#" class="red" aria-label="Facebook">👍 Facebook</a>
-          <a href="#" class="red" aria-label="WhatsApp">💬 WhatsApp</a>
+          <a href="#" class="red" aria-label="Instagram">Instagram</a>
+          <a href="#" class="red" aria-label="Facebook">Facebook</a>
+          <a href="#" class="red" aria-label="WhatsApp">WhatsApp</a>
         </div>
       </div>
 
@@ -526,6 +506,25 @@
                 <option value="7+">7 o más</option>
               </select>
             </div>
+          </div>
+
+          <div class="campo">
+            <label for="horario">Horario de reserva</label>
+            <select id="horario" name="horario" required>
+              <option value="" disabled selected>Elegí turno y horario…</option>
+              <optgroup label="Almuerzo">
+                <option value="Almuerzo - 12:00">12:00 hs</option>
+                <option value="Almuerzo - 12:30">12:30 hs</option>
+                <option value="Almuerzo - 13:00">13:00 hs</option>
+                <option value="Almuerzo - 13:30">13:30 hs</option>
+              </optgroup>
+              <optgroup label="Cena">
+                <option value="Cena - 21:00">21:00 hs</option>
+                <option value="Cena - 21:30">21:30 hs</option>
+                <option value="Cena - 22:00">22:00 hs</option>
+                <option value="Cena - 22:30">22:30 hs</option>
+              </optgroup>
+            </select>
           </div>
 
           <div class="campo">
