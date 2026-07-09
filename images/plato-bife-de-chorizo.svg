@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de bife de chorizo a la parrilla">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1a10"/><stop offset="1" stop-color="#120b06"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="1" r="0.85"><stop offset="0" stop-color="#ff8a2a" stop-opacity="0.7"/><stop offset="0.5" stop-color="#d9541e" stop-opacity="0.22"/><stop offset="1" stop-color="#d9541e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="meat" cx="0.4" cy="0.35" r="0.85"><stop offset="0" stop-color="#a84e29"/><stop offset="0.6" stop-color="#743019"/><stop offset="1" stop-color="#481b0e"/></radialGradient>
+    <clipPath id="steak"><rect x="170" y="235" width="460" height="210" rx="80"/></clipPath>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <g fill="#ffffff" opacity="0.045"><ellipse cx="260" cy="140" rx="120" ry="40"/><ellipse cx="540" cy="110" rx="150" ry="46"/></g>
+  <g stroke="#0b0805" stroke-width="15" stroke-linecap="round" opacity="0.8"><line x1="50" y1="492" x2="750" y2="492"/><line x1="50" y1="437" x2="750" y2="437"/></g>
+  <rect x="170" y="235" width="460" height="210" rx="80" fill="url(#meat)" stroke="#38150b" stroke-width="5"/>
+  <g clip-path="url(#steak)">
+    <rect x="170" y="235" width="460" height="55" fill="#b5602f" opacity="0.5"/>
+    <g stroke="#2a0f07" stroke-width="14" opacity="0.5" stroke-linecap="round"><line x1="150" y1="250" x2="360" y2="470"/><line x1="230" y1="240" x2="440" y2="470"/><line x1="310" y1="235" x2="520" y2="470"/><line x1="390" y1="235" x2="600" y2="470"/><line x1="470" y1="235" x2="660" y2="455"/></g>
+  </g>
+  <ellipse cx="300" cy="288" rx="72" ry="26" fill="#e09752" opacity="0.35"/>
+  <g fill="#f4ead6" opacity="0.85"><circle cx="360" cy="300" r="3"/><circle cx="420" cy="330" r="3"/><circle cx="480" cy="300" r="3"/><circle cx="330" cy="360" r="3"/><circle cx="520" cy="360" r="3"/></g>
+  <g fill="#ffb15a"><circle cx="160" cy="537" r="5"/><circle cx="360" cy="550" r="4"/><circle cx="560" cy="532" r="5"/><circle cx="680" cy="547" r="4"/></g>
+</svg>

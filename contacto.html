@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto y ubicación — Parrilla Don José</title>
+  <meta name="description" content="Dónde encontrarnos: dirección, horarios de atención, teléfono, mapa y redes sociales de Parrilla Don José." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== Encabezado / Navegación ===================== -->
+  <header class="cabecera">
+    <div class="contenedor nav">
+      <a href="index.html" class="nav__marca">
+        <span class="nav__marca-nombre">Parrilla Don <span>José</span></span>
+        <span class="nav__marca-sub">Asado a las brasas</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__lista" id="menu-principal">
+        <li><a href="index.html" class="nav__link">Inicio</a></li>
+        <li><a href="menu.html" class="nav__link">Menú</a></li>
+        <li><a href="nosotros.history.html" class="nav__link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav__link nav__link--activo">Contacto</a></li>
+        <li class="nav__cta"><a href="reservar.html" class="btn btn--brasa">Reservar mesa</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="nav__overlay"></div>
+
+  <!-- ===================== Banner ===================== -->
+  <section class="banner">
+    <h1 class="banner__titulo">Contacto y ubicación</h1>
+    <p class="banner__texto">Te esperamos con el fuego encendido</p>
+  </section>
+
+  <!-- ===================== Info + Mapa ===================== -->
+  <section class="seccion contenedor">
+    <div class="contacto-grid">
+
+      <!-- Columna de información -->
+      <div>
+        <h2 class="titulo-seccion" style="text-align: left;">Dónde encontrarnos</h2>
+        <div class="divisor" style="margin-left: 0;"></div>
+
+        <ul class="info-lista">
+          <li>
+            <span class="info-lista__icono">📍</span>
+            <div>
+              <div class="info-lista__titulo">Dirección</div>
+              <div class="info-lista__dato">Av. de los Asadores 1234<br />Palermo, Ciudad Autónoma de Buenos Aires</div>
+            </div>
+          </li>
+          <li>
+            <span class="info-lista__icono">🕑</span>
+            <div>
+              <div class="info-lista__titulo">Horarios de atención</div>
+              <div class="info-lista__dato">
+                Martes a Jueves: 12:00 – 15:30 y 20:00 – 24:00<br />
+                Viernes y Sábados: 12:00 – 01:00<br />
+                Domingos: 12:00 – 16:00<br />
+                Lunes: cerrado
+              </div>
+            </div>
+          </li>
+          <li>
+            <span class="info-lista__icono">📞</span>
+            <div>
+              <div class="info-lista__titulo">Teléfono</div>
+              <div class="info-lista__dato">(011) 4567-8900</div>
+            </div>
+          </li>
+          <li>
+            <span class="info-lista__icono">💬</span>
+            <div>
+              <div class="info-lista__titulo">WhatsApp</div>
+              <div class="info-lista__dato">+54 9 11 2345-6789</div>
+            </div>
+          </li>
+          <li>
+            <span class="info-lista__icono">✉️</span>
+            <div>
+              <div class="info-lista__titulo">Email</div>
+              <div class="info-lista__dato">hola@parrilladonjose.com.ar</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="info-lista__titulo" style="margin-bottom: 0.5rem;">Seguinos</div>
+        <div class="redes">
+          <a href="#" class="red" aria-label="Instagram">📷 Instagram</a>
+          <a href="#" class="red" aria-label="Facebook">👍 Facebook</a>
+          <a href="#" class="red" aria-label="WhatsApp">💬 WhatsApp</a>
+        </div>
+
+        <!-- Llamado a reservar (ahora en su propia página) -->
+        <div class="contacto-reserva">
+          <p>¿Querés asegurar tu lugar junto al fuego?</p>
+          <a href="reservar.html" class="btn btn--brasa">Reservar mesa</a>
+        </div>
+      </div>
+
+      <!-- Columna del mapa -->
+      <div>
+        <h2 class="titulo-seccion" style="text-align: left;">Cómo llegar</h2>
+        <div class="divisor" style="margin-left: 0;"></div>
+        <p style="color: var(--cuero); margin-bottom: 1rem;">
+          Estamos en pleno Palermo, a pasos del subte y con estacionamiento en la zona.
+          Tocá el mapa para abrir la ruta en Google Maps.
+        </p>
+        <!-- Mapa embebido (Google Maps genérico) -->
+        <iframe
+          class="mapa mapa--alto"
+          title="Ubicación de Parrilla Don José en el mapa"
+          src="https://www.google.com/maps?q=Buenos+Aires,+Argentina&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== Pie ===================== -->
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <div>
+        <div class="pie__marca-nombre">Parrilla Don <span>José</span></div>
+        <p>El verdadero sabor del asado argentino, a las brasas y con la tradición de siempre. Te esperamos con la mesa puesta y el fuego encendido.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="nosotros.history.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="reservar.html">Reservar mesa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visitanos</h4>
+        <ul>
+          <li>Av. de los Asadores 1234</li>
+          <li>Palermo, Buenos Aires</li>
+          <li>Tel: (011) 4567-8900</li>
+          <li>Mar. a Dom. · 12 a 24 h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="contenedor pie__base">
+      <p>© 2026 Parrilla Don José. Todos los derechos reservados. · Sitio ficticio con fines de demostración.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

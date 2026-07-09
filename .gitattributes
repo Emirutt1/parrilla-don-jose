@@ -1,0 +1,16 @@
+# Normaliza los finales de línea automáticamente
+* text=auto
+
+# Archivos que siempre usan LF
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.svg  text eol=lf
+*.md   text eol=lf
+
+# Binarios (no tocar)
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.webp binary

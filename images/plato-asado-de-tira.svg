@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de asado de tira a la parrilla">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1a10"/><stop offset="1" stop-color="#120b06"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="1" r="0.85"><stop offset="0" stop-color="#ff8a2a" stop-opacity="0.75"/><stop offset="0.5" stop-color="#d9541e" stop-opacity="0.25"/><stop offset="1" stop-color="#d9541e" stop-opacity="0"/></radialGradient>
+    <linearGradient id="meat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a4526"/><stop offset="0.5" stop-color="#6e2c18"/><stop offset="1" stop-color="#471a0e"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <g fill="#ffffff" opacity="0.045"><ellipse cx="250" cy="150" rx="130" ry="42"/><ellipse cx="540" cy="115" rx="160" ry="48"/></g>
+  <g stroke="#0b0805" stroke-width="15" stroke-linecap="round" opacity="0.85"><line x1="50" y1="470" x2="750" y2="470"/><line x1="50" y1="418" x2="750" y2="418"/><line x1="50" y1="366" x2="750" y2="366"/></g>
+  <rect x="110" y="290" width="580" height="130" rx="28" fill="url(#meat)" stroke="#3a160c" stroke-width="4"/>
+  <rect x="110" y="290" width="580" height="34" rx="26" fill="#b5602f" opacity="0.55"/>
+  <g fill="#f3e6cf" stroke="#c9b38c" stroke-width="3"><circle cx="195" cy="355" r="21"/><circle cx="300" cy="355" r="21"/><circle cx="405" cy="355" r="21"/><circle cx="510" cy="355" r="21"/><circle cx="615" cy="355" r="21"/></g>
+  <g fill="#dcbf88"><circle cx="195" cy="355" r="9"/><circle cx="300" cy="355" r="9"/><circle cx="405" cy="355" r="9"/><circle cx="510" cy="355" r="9"/><circle cx="615" cy="355" r="9"/></g>
+  <g stroke="#0b0805" stroke-width="9" stroke-linecap="round" opacity="0.45"><line x1="120" y1="322" x2="680" y2="322"/><line x1="120" y1="388" x2="680" y2="388"/></g>
+  <g fill="#ffb15a"><circle cx="150" cy="520" r="5"/><circle cx="320" cy="542" r="4"/><circle cx="480" cy="515" r="6"/><circle cx="650" cy="536" r="4"/></g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de provoleta a la parrilla">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#281910"/><stop offset="1" stop-color="#120b06"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.7"><stop offset="0" stop-color="#ff9a3a" stop-opacity="0.35"/><stop offset="1" stop-color="#d9541e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="cheese" cx="0.42" cy="0.38" r="0.7"><stop offset="0" stop-color="#fbeeb0"/><stop offset="0.6" stop-color="#eccd6d"/><stop offset="1" stop-color="#d6a544"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <rect x="560" y="322" width="230" height="42" rx="21" fill="#17120d"/><circle cx="770" cy="343" r="26" fill="#17120d"/>
+  <circle cx="380" cy="345" r="222" fill="#17120d"/><circle cx="380" cy="345" r="222" fill="none" stroke="#000000" stroke-width="6"/>
+  <circle cx="380" cy="345" r="205" fill="none" stroke="#2c2118" stroke-width="8"/>
+  <circle cx="380" cy="345" r="188" fill="url(#cheese)"/>
+  <g fill="#c8912f" opacity="0.75"><ellipse cx="300" cy="300" rx="34" ry="24"/><ellipse cx="450" cy="320" rx="40" ry="26"/><ellipse cx="360" cy="410" rx="44" ry="28"/><ellipse cx="470" cy="410" rx="26" ry="18"/></g>
+  <g fill="#8a5a1e" opacity="0.7"><circle cx="320" cy="360" r="10"/><circle cx="430" cy="290" r="8"/><circle cx="410" cy="430" r="9"/></g>
+  <g fill="#4a6b2a"><ellipse cx="330" cy="330" rx="7" ry="3"/><ellipse cx="400" cy="360" rx="7" ry="3" transform="rotate(35 400 360)"/><ellipse cx="440" cy="360" rx="7" ry="3" transform="rotate(-20 440 360)"/><ellipse cx="360" cy="290" rx="6" ry="3" transform="rotate(20 360 290)"/><ellipse cx="300" cy="400" rx="7" ry="3"/><ellipse cx="450" cy="380" rx="6" ry="3" transform="rotate(50 450 380)"/></g>
+  <g fill="#fff6dd" opacity="0.6"><circle cx="330" cy="270" r="7"/><circle cx="290" cy="340" r="5"/><circle cx="420" cy="255" r="5"/></g>
+  <g stroke="#ffffff" opacity="0.08" stroke-width="10" stroke-linecap="round" fill="none"><path d="M340 175 q-20 -40 10 -70"/><path d="M420 170 q20 -40 -8 -72"/></g>
+</svg>

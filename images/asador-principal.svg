@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="El asador atendiendo la parrilla junto al fuego">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241710"/><stop offset="1" stop-color="#100a06"/></linearGradient>
+    <radialGradient id="fire" cx="0.62" cy="0.72" r="0.5"><stop offset="0" stop-color="#ffc46a" stop-opacity="0.9"/><stop offset="0.5" stop-color="#e0651c" stop-opacity="0.4"/><stop offset="1" stop-color="#e0651c" stop-opacity="0"/></radialGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffd27a"/><stop offset="0.4" stop-color="#ef7a2a"/><stop offset="1" stop-color="#d9541e" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#fire)"/>
+  <g stroke="#ffffff" opacity="0.05" stroke-width="16" stroke-linecap="round" fill="none"><path d="M500 250 q-30 -70 20 -130"/><path d="M580 240 q30 -60 -10 -120"/></g>
+  <g stroke="#0d0906" stroke-width="10"><line x1="470" y1="470" x2="470" y2="560"/><line x1="740" y1="470" x2="740" y2="560"/></g>
+  <rect x="450" y="430" width="310" height="30" rx="8" fill="#1a120b" stroke="#000000" stroke-width="3"/>
+  <g stroke="#0d0906" stroke-width="7" stroke-linecap="round" opacity="0.9"><line x1="470" y1="424" x2="740" y2="424"/><line x1="470" y1="412" x2="740" y2="412"/><line x1="470" y1="400" x2="740" y2="400"/></g>
+  <g><path d="M500 424 q-16 -50 14 -84 q-6 40 24 54 q26 -20 14 -58 q40 46 6 96 Z" fill="url(#flame)"/><path d="M600 424 q-14 -42 12 -74 q-4 34 20 46 q22 -16 12 -50 q34 40 4 82 Z" fill="url(#flame)"/><path d="M690 424 q-12 -36 10 -62 q-2 28 18 40 q-2 -14 8 -34 q26 34 2 68 Z" fill="url(#flame)"/></g>
+  <g fill="#3a2114"><path d="M470 452 h270 v10 h-270 Z"/></g>
+  <g fill="#8a3b1a"><ellipse cx="520" cy="455" rx="20" ry="6"/><ellipse cx="600" cy="458" rx="24" ry="6"/><ellipse cx="680" cy="455" rx="18" ry="6"/></g>
+  <g fill="#0d0906">
+    <circle cx="245" cy="185" r="40"/>
+    <path d="M195 240 Q245 215 295 240 L300 300 L285 300 L290 560 L200 560 L205 300 L190 300 Z"/>
+    <path d="M285 260 L470 405 L455 425 L275 300 Z"/>
+    <rect x="215" y="330" width="60" height="150" rx="6"/>
+  </g>
+  <g stroke="#3a2114" stroke-width="6" fill="none"><path d="M470 405 l90 8"/></g>
+  <g stroke="#ffb15a" stroke-width="3" opacity="0.7" fill="none"><path d="M235 150 q14 -10 26 0"/><path d="M292 250 L300 300"/><path d="M470 405 L455 425"/></g>
+  <g fill="#ffb15a"><circle cx="540" cy="300" r="4"/><circle cx="620" cy="270" r="3"/><circle cx="690" cy="320" r="4"/><circle cx="580" cy="230" r="3"/><circle cx="660" cy="360" r="3"/></g>
+</svg>

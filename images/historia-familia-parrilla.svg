@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La familia reunida a la mesa del restaurante">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2414"/><stop offset="1" stop-color="#160d07"/></linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.2" r="0.55"><stop offset="0" stop-color="#ffcf87" stop-opacity="0.8"/><stop offset="0.55" stop-color="#e0873a" stop-opacity="0.25"/><stop offset="1" stop-color="#e0873a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="mesa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b4227"/><stop offset="1" stop-color="#3a2416"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#lamp)"/>
+  <line x1="400" y1="0" x2="400" y2="70" stroke="#0d0906" stroke-width="5"/>
+  <path d="M355 70 L445 70 L430 118 L370 118 Z" fill="#1a120b" stroke="#e0873a" stroke-width="2"/>
+  <ellipse cx="400" cy="120" rx="26" ry="10" fill="#ffcf87" opacity="0.9"/>
+  <g fill="#241a12">
+    <circle cx="230" cy="300" r="42"/><path d="M175 430 Q230 340 285 430 Z"/>
+    <circle cx="400" cy="280" r="46"/><path d="M335 430 Q400 315 465 430 Z"/>
+    <circle cx="575" cy="300" r="42"/><path d="M520 430 Q575 340 630 430 Z"/>
+  </g>
+  <g fill="#e0873a" opacity="0.35"><circle cx="230" cy="300" r="42"/><circle cx="400" cy="280" r="46"/><circle cx="575" cy="300" r="42"/></g>
+  <g fill="#241a12"><circle cx="230" cy="300" r="37"/><circle cx="400" cy="280" r="41"/><circle cx="575" cy="300" r="37"/></g>
+  <path d="M60 470 Q400 430 740 470 L740 600 L60 600 Z" fill="url(#mesa)"/>
+  <path d="M60 470 Q400 430 740 470 L740 486 Q400 448 60 486 Z" fill="#8a5a34" opacity="0.6"/>
+  <g>
+    <rect x="372" y="380" width="56" height="96" rx="14" fill="#26331d"/><rect x="388" y="345" width="24" height="45" rx="6" fill="#26331d"/><rect x="378" y="405" width="44" height="34" rx="4" fill="#c9b48a"/>
+  </g>
+  <g stroke="#d9c7a0" stroke-width="3" fill="#6e1f22" fill-opacity="0.85"><path d="M300 470 l-10 -40 a16 16 0 0 1 32 0 Z"/><path d="M500 470 l-10 -40 a16 16 0 0 1 32 0 Z"/></g>
+  <g fill="#2a1c12"><ellipse cx="220" cy="500" rx="52" ry="16"/><ellipse cx="580" cy="500" rx="52" ry="16"/></g>
+  <ellipse cx="400" cy="505" rx="86" ry="22" fill="#2a1c12"/><ellipse cx="400" cy="500" rx="70" ry="16" fill="#7a3a1e"/>
+  <radialGradient id="vig2" cx="0.5" cy="0.5" r="0.75"><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.55"/></radialGradient>
+  <rect width="800" height="600" fill="url(#vig2)"/>
+</svg>

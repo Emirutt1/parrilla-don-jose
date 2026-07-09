@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de mollejas al limón a la parrilla">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1a10"/><stop offset="1" stop-color="#120b06"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="1" r="0.85"><stop offset="0" stop-color="#ff8a2a" stop-opacity="0.65"/><stop offset="0.5" stop-color="#d9541e" stop-opacity="0.2"/><stop offset="1" stop-color="#d9541e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="molleja" cx="0.4" cy="0.35" r="0.8"><stop offset="0" stop-color="#e9ab52"/><stop offset="0.55" stop-color="#a5641f"/><stop offset="1" stop-color="#6e3d12"/></radialGradient>
+    <radialGradient id="limon" cx="0.5" cy="0.5" r="0.6"><stop offset="0" stop-color="#fdf0a0"/><stop offset="1" stop-color="#e8c53f"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <g stroke="#0b0805" stroke-width="14" stroke-linecap="round" opacity="0.7"><line x1="50" y1="480" x2="750" y2="480"/><line x1="50" y1="428" x2="750" y2="428"/></g>
+  <g stroke="#2a0f07" stroke-width="6"><ellipse cx="330" cy="330" rx="95" ry="72" fill="url(#molleja)"/><ellipse cx="470" cy="360" rx="88" ry="66" fill="url(#molleja)"/><ellipse cx="400" cy="270" rx="80" ry="60" fill="url(#molleja)"/><ellipse cx="250" cy="390" rx="70" ry="52" fill="url(#molleja)"/></g>
+  <g fill="#ffd98a" opacity="0.55"><ellipse cx="305" cy="305" rx="30" ry="18"/><ellipse cx="450" cy="335" rx="28" ry="16"/><ellipse cx="385" cy="248" rx="26" ry="15"/></g>
+  <g stroke="#5a3110" stroke-width="4" fill="none" opacity="0.5"><path d="M300 350 q30 20 70 5"/><path d="M440 385 q30 18 70 0"/></g>
+  <g transform="translate(560 300)"><path d="M0 0 A90 90 0 0 1 90 90 L0 90 Z" fill="url(#limon)" stroke="#c9a52e" stroke-width="4"/><path d="M6 84 L84 84 L84 8 Z" fill="none" stroke="#fff7d6" stroke-width="6" opacity="0.7"/></g>
+  <g transform="translate(150 300) rotate(-20)"><path d="M0 0 A70 70 0 0 1 70 70 L0 70 Z" fill="url(#limon)" stroke="#c9a52e" stroke-width="4"/><path d="M5 65 L65 65 L65 6 Z" fill="none" stroke="#fff7d6" stroke-width="5" opacity="0.7"/></g>
+  <g fill="#4a6b2a"><ellipse cx="360" cy="330" rx="8" ry="4"/><ellipse cx="430" cy="300" rx="8" ry="4" transform="rotate(30 430 300)"/><ellipse cx="300" cy="370" rx="7" ry="3"/><ellipse cx="470" cy="330" rx="7" ry="4"/></g>
+  <g fill="#ffb15a"><circle cx="150" cy="530" r="5"/><circle cx="360" cy="548" r="4"/><circle cx="600" cy="532" r="5"/></g>
+</svg>

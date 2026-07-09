@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Fuego de leña en la parrilla">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241710"/><stop offset="1" stop-color="#0d0704"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.85" r="0.7"><stop offset="0" stop-color="#ff9a3a" stop-opacity="0.7"/><stop offset="0.5" stop-color="#d9541e" stop-opacity="0.25"/><stop offset="1" stop-color="#d9541e" stop-opacity="0"/></radialGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffd27a"/><stop offset="0.4" stop-color="#ef7a2a"/><stop offset="1" stop-color="#d9541e" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <g stroke="#0b0805" stroke-width="12" stroke-linecap="round" opacity="0.85"><line x1="80" y1="470" x2="720" y2="470"/><line x1="80" y1="440" x2="720" y2="440"/></g>
+  <g stroke="#3a2114" stroke-width="26" stroke-linecap="round"><line x1="250" y1="500" x2="470" y2="470"/><line x1="330" y1="510" x2="560" y2="480"/><line x1="300" y1="480" x2="520" y2="510"/></g>
+  <g>
+    <path d="M400 470 q-40 -90 20 -160 q-8 60 40 80 q40 -30 20 -90 q70 70 20 170 Z" fill="url(#flame)"/>
+    <path d="M300 470 q-28 -70 16 -120 q-4 44 28 58 q28 -22 14 -66 q46 54 6 128 Z" fill="url(#flame)" opacity="0.9"/>
+    <path d="M510 470 q-26 -64 14 -110 q-2 40 26 52 q22 -18 12 -56 q40 48 4 118 Z" fill="url(#flame)" opacity="0.9"/>
+  </g>
+  <g fill="#ffb15a"><circle cx="360" cy="300" r="4"/><circle cx="440" cy="260" r="3"/><circle cx="300" cy="330" r="3"/><circle cx="520" cy="300" r="4"/><circle cx="470" cy="230" r="3"/></g>
+  <g fill="#ffcf87" opacity="0.9"><ellipse cx="330" cy="470" rx="24" ry="7"/><ellipse cx="420" cy="472" rx="30" ry="8"/><ellipse cx="500" cy="468" rx="22" ry="7"/></g>
+</svg>

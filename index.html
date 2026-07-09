@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parrilla Don José — Asado argentino a las brasas</title>
+  <meta name="description" content="Parrilla Don José: auténtico asado argentino a la parrilla. Menú, historia, ubicación y reservas, todo en un solo lugar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== Encabezado / Navegación ===================== -->
+  <header class="cabecera">
+    <div class="contenedor nav">
+      <a href="#inicio" class="nav__marca">
+        <span class="nav__marca-nombre">Parrilla Don <span>José</span></span>
+        <span class="nav__marca-sub">Asado a las brasas</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__lista" id="menu-principal">
+        <li><a href="#inicio" class="nav__link nav__link--activo">Inicio</a></li>
+        <li><a href="#menu" class="nav__link">Menú</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        <li class="nav__cta"><a href="#reservar" class="btn btn--brasa">Reservar mesa</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="nav__overlay"></div>
+
+  <!-- ===================== Inicio / Hero ===================== -->
+  <section class="hero" id="inicio">
+    <!-- Fondo cinematográfico: brasas y chispas flotando en la oscuridad. -->
+    <div class="hero__fuego" aria-hidden="true">
+      <div class="hero__lecho"></div>
+      <span class="hero__brasa" style="--x:6%;  --s:3px; --d:8s;   --delay:0s;   --dx:24px;  --blur:1.5px; --op:.6"></span>
+      <span class="hero__brasa" style="--x:11%; --s:6px; --d:6.2s; --delay:1.1s; --dx:-30px; --blur:0px;  --op:.95"></span>
+      <span class="hero__brasa" style="--x:15%; --s:2px; --d:9s;   --delay:2.3s; --dx:18px;  --blur:2px;  --op:.5"></span>
+      <span class="hero__brasa" style="--x:19%; --s:5px; --d:6.8s; --delay:.5s;  --dx:36px;  --blur:0px;  --op:.9"></span>
+      <span class="hero__brasa" style="--x:24%; --s:4px; --d:7.4s; --delay:3s;   --dx:-22px; --blur:.5px; --op:.8"></span>
+      <span class="hero__brasa" style="--x:29%; --s:7px; --d:5.6s; --delay:1.7s; --dx:44px;  --blur:0px;  --op:1"></span>
+      <span class="hero__brasa" style="--x:33%; --s:2px; --d:9.5s; --delay:.9s;  --dx:-14px; --blur:2px;  --op:.45"></span>
+      <span class="hero__brasa" style="--x:38%; --s:5px; --d:6.6s; --delay:2.6s; --dx:28px;  --blur:0px;  --op:.9"></span>
+      <span class="hero__brasa" style="--x:42%; --s:3px; --d:8.4s; --delay:4s;   --dx:-34px; --blur:1.5px; --op:.6"></span>
+      <span class="hero__brasa" style="--x:47%; --s:8px; --d:5.2s; --delay:.3s;  --dx:20px;  --blur:0px;  --op:1"></span>
+      <span class="hero__brasa" style="--x:51%; --s:4px; --d:7.8s; --delay:2.1s; --dx:-40px; --blur:.5px; --op:.85"></span>
+      <span class="hero__brasa" style="--x:55%; --s:2px; --d:9.2s; --delay:3.4s; --dx:16px;  --blur:2px;  --op:.5"></span>
+      <span class="hero__brasa" style="--x:60%; --s:6px; --d:6s;   --delay:1.3s; --dx:38px;  --blur:0px;  --op:.95"></span>
+      <span class="hero__brasa" style="--x:64%; --s:3px; --d:8.6s; --delay:.7s;  --dx:-26px; --blur:1.5px; --op:.6"></span>
+      <span class="hero__brasa" style="--x:69%; --s:7px; --d:5.4s; --delay:2.9s; --dx:30px;  --blur:0px;  --op:1"></span>
+      <span class="hero__brasa" style="--x:73%; --s:4px; --d:7.2s; --delay:4.4s; --dx:-18px; --blur:.5px; --op:.8"></span>
+      <span class="hero__brasa" style="--x:78%; --s:2px; --d:9.8s; --delay:1.9s; --dx:22px;  --blur:2px;  --op:.45"></span>
+      <span class="hero__brasa" style="--x:82%; --s:5px; --d:6.4s; --delay:.4s;  --dx:-36px; --blur:0px;  --op:.9"></span>
+      <span class="hero__brasa" style="--x:87%; --s:6px; --d:5.8s; --delay:3.1s; --dx:26px;  --blur:0px;  --op:.95"></span>
+      <span class="hero__brasa" style="--x:91%; --s:3px; --d:8.2s; --delay:1.5s; --dx:-20px; --blur:1.5px; --op:.6"></span>
+      <span class="hero__brasa" style="--x:95%; --s:4px; --d:7.6s; --delay:2.7s; --dx:14px;  --blur:.5px; --op:.8"></span>
+      <span class="hero__brasa" style="--x:45%; --s:6px; --d:6.1s; --delay:5.6s; --dx:-28px; --blur:0px;  --op:.95"></span>
+      <span class="hero__brasa" style="--x:66%; --s:3px; --d:8.8s; --delay:5.2s; --dx:24px;  --blur:1.5px; --op:.6"></span>
+    </div>
+
+    <div class="hero__contenido">
+      <span class="hero__eyebrow">Desde 1962 · Buenos Aires</span>
+      <h1 class="hero__titulo">El verdadero sabor del <span>fuego argentino</span></h1>
+      <p class="hero__frase">Bienvenidos a la mesa donde el asado se hace con paciencia, leña y corazón. En Parrilla Don José cada corte cuenta una historia.</p>
+      <div class="hero__acciones">
+        <a href="#reservar" class="btn btn--brasa">Reservar mesa</a>
+        <a href="#menu" class="btn btn--linea">Ver el menú</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Bienvenida ===================== -->
+  <section class="seccion contenedor">
+    <h2 class="titulo-seccion">Nuestra casa, tu asado</h2>
+    <div class="divisor"></div>
+    <p style="max-width: 760px; margin: 0 auto; text-align: center; color: var(--cuero); font-size: 1.1rem;">
+      Somos una parrilla de barrio con alma de campo. Trabajamos cortes seleccionados,
+      achuras frescas y el fuego justo de la leña de quebracho. Sentate, destapá un buen
+      Malbec y dejá que el asador haga lo suyo.
+    </p>
+  </section>
+
+  <!-- ===================== Platos destacados ===================== -->
+  <section class="seccion seccion--tierra">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Platos destacados</h2>
+      <p class="subtitulo-seccion">Los favoritos de la casa, directo de la parrilla</p>
+
+      <div class="destacados">
+        <article class="plato">
+          <img src="images/plato-asado-de-tira.jpg" onerror="this.onerror=null;this.src='images/plato-asado-de-tira.svg'" alt="Asado de tira a la parrilla" loading="lazy" decoding="async" class="plato__foto" />
+          <div class="plato__cuerpo">
+            <h3 class="plato__nombre">Asado de tira</h3>
+            <p class="plato__desc">El clásico de los clásicos. Costilla vacuna a fuego lento, dorada por fuera y jugosa por dentro.</p>
+          </div>
+        </article>
+
+        <article class="plato">
+          <img src="images/plato-bife-de-chorizo.jpg" onerror="this.onerror=null;this.src='images/plato-bife-de-chorizo.svg'" alt="Bife de chorizo grueso" loading="lazy" decoding="async" class="plato__foto" />
+          <div class="plato__cuerpo">
+            <h3 class="plato__nombre">Bife de chorizo</h3>
+            <p class="plato__desc">Corte grueso y tierno, sellado a las brasas y servido a punto. Una fiesta para el paladar.</p>
+          </div>
+        </article>
+
+        <article class="plato">
+          <img src="images/plato-provoleta.jpg" onerror="this.onerror=null;this.src='images/plato-provoleta.svg'" alt="Provoleta a la parrilla con orégano" loading="lazy" decoding="async" class="plato__foto" />
+          <div class="plato__cuerpo">
+            <h3 class="plato__nombre">Provoleta a la parrilla</h3>
+            <p class="plato__desc">Queso provolone fundido con orégano y un toque de aceite de oliva. Para arrancar con todo.</p>
+          </div>
+        </article>
+
+        <article class="plato">
+          <img src="images/plato-mollejas.jpg" onerror="this.onerror=null;this.src='images/plato-mollejas.svg'" alt="Mollejas doradas al limón" loading="lazy" decoding="async" class="plato__foto" />
+          <div class="plato__cuerpo">
+            <h3 class="plato__nombre">Mollejas al limón</h3>
+            <p class="plato__desc">Achura fina y crocante, dorada lentamente y realzada con un chorrito de limón.</p>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="#menu" class="btn btn--brasa">Ver el menú completo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Valores ===================== -->
+  <section class="seccion seccion--oscura">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Por qué elegirnos</h2>
+      <div class="divisor"></div>
+      <div class="valores">
+        <div class="valor">
+          <img src="images/valor-fuego-lena.jpg" onerror="this.onerror=null;this.src='images/valor-fuego-lena.svg'" alt="Fuego de leña ardiendo en la parrilla" loading="lazy" decoding="async" class="valor__foto" />
+          <div class="valor__icono">🔥</div>
+          <h3 class="valor__titulo">Fuego de leña</h3>
+          <p>Nada de gas ni atajos. Solo brasas de quebracho y el tiempo que cada corte necesita.</p>
+        </div>
+        <div class="valor">
+          <div class="valor__icono">🥩</div>
+          <h3 class="valor__titulo">Carne seleccionada</h3>
+          <p>Trabajamos con productores de confianza para llevar a tu mesa cortes de primera calidad.</p>
+        </div>
+        <div class="valor">
+          <div class="valor__icono">🍷</div>
+          <h3 class="valor__titulo">Buena mesa</h3>
+          <p>Vinos argentinos, ambiente cálido y la sobremesa que solo un buen asado sabe regalar.</p>
+        </div>
+        <div class="valor">
+          <div class="valor__icono">🤝</div>
+          <h3 class="valor__titulo">Tradición familiar</h3>
+          <p>Tres generaciones cuidando el mismo secreto: cocinar como en casa, para tratarte como familia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Menú ===================== -->
+  <section class="seccion contenedor" id="menu">
+    <h2 class="titulo-seccion">Nuestro menú</h2>
+    <p class="subtitulo-seccion">De la parrilla a tu mesa · Precios en pesos argentinos</p>
+
+    <div class="libro" id="libro-menu">
+      <div class="libro__hojas">
+
+        <!-- Tapa dura (portada) -->
+        <div class="libro__pagina libro__pagina--tapa libro__pagina--activa">
+          <div class="tapa">
+            <div class="tapa__marco">
+              <span class="tapa__eyebrow">Carta de la casa</span>
+              <div class="tapa__emblema">🔥</div>
+              <h3 class="tapa__menu">Menú</h3>
+              <div class="tapa__linea"></div>
+              <h2 class="tapa__marca">Parrilla<br />Don José</h2>
+              <div class="tapa__linea"></div>
+              <span class="tapa__pie">Asado a las brasas · Desde 1962</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achuras -->
+        <div class="libro__pagina">
+      <h3 class="menu-seccion__titulo">🔥 Achuras</h3>
+      <div class="menu-lista">
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Chorizo criollo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.200</span></div>
+          <p class="menu-item__desc">Embutido casero, jugoso y bien condimentado, dorado a la parrilla.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Morcilla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.000</span></div>
+          <p class="menu-item__desc">Suave y cremosa, con su punto justo de especias.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Mollejas al limón</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$8.900</span></div>
+          <p class="menu-item__desc">Crocantes por fuera, tiernas por dentro, con un chorrito de limón.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Chinchulines</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$6.500</span></div>
+          <p class="menu-item__desc">Trenzados y dorados a fuego lento hasta quedar bien crujientes.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Riñones al verdeo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$5.800</span></div>
+          <p class="menu-item__desc">Salteados con cebolla de verdeo y un toque de vino blanco.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Provoleta a la parrilla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$5.500</span></div>
+          <p class="menu-item__desc">Queso provolone fundido con orégano y aceite de oliva.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cortes -->
+    <div class="libro__pagina">
+      <h3 class="menu-seccion__titulo">🥩 Cortes</h3>
+      <div class="menu-lista">
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Vacío</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$11.500</span></div>
+          <p class="menu-item__desc">Corte magro y sabroso, cocido lento para lograr su costra dorada.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Asado de tira</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$12.000</span></div>
+          <p class="menu-item__desc">La costilla vacuna clásica, jugosa y con ese sabor inconfundible.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Entraña</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$14.500</span></div>
+          <p class="menu-item__desc">Tierna y muy sabrosa, sellada a fuego fuerte y servida a punto.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Bife de chorizo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$15.000</span></div>
+          <p class="menu-item__desc">Corte grueso, jugoso y de textura suave. Uno de los preferidos.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Ojo de bife</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$16.000</span></div>
+          <p class="menu-item__desc">Marmoleado y tierno, con todo el sabor concentrado del centro de la costilla.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Bife de lomo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$17.500</span></div>
+          <p class="menu-item__desc">El corte más magro y tierno, ideal para quienes buscan suavidad.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Matambre de cerdo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$10.500</span></div>
+          <p class="menu-item__desc">Fino y crocante, dorado lentamente hasta quedar bien dorado.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Parrillada Don José (para 2)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$28.000</span></div>
+          <p class="menu-item__desc">Selección de achuras y cortes surtidos para compartir junto al fuego.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guarniciones -->
+    <div class="libro__pagina">
+      <h3 class="menu-seccion__titulo">🥗 Guarniciones</h3>
+      <div class="menu-lista">
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Ensalada criolla</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.500</span></div>
+          <p class="menu-item__desc">Tomate, cebolla y morrón con aceite de oliva y un toque de vinagre.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Papas fritas caseras</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.000</span></div>
+          <p class="menu-item__desc">Cortadas a mano y bien crocantes. Se pueden pedir con provenzal.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Papas a la provenzal</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.500</span></div>
+          <p class="menu-item__desc">Con ajo y perejil fresco salteados al momento.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Ensalada mixta</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.500</span></div>
+          <p class="menu-item__desc">Lechuga, tomate y zanahoria, fresca y liviana.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Batatas al rescoldo</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.200</span></div>
+          <p class="menu-item__desc">Asadas entre las brasas, dulces y ahumadas.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Puré de calabaza</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.800</span></div>
+          <p class="menu-item__desc">Cremoso y casero, con un toque de manteca y nuez moscada.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Postres -->
+    <div class="libro__pagina">
+      <h3 class="menu-seccion__titulo">🍮 Postres</h3>
+      <div class="menu-lista">
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Flan casero con dulce de leche</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.500</span></div>
+          <p class="menu-item__desc">Con crema o dulce de leche… o pisá el barro y pedí las dos.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Panqueque de dulce de leche</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.800</span></div>
+          <p class="menu-item__desc">Relleno generoso y flambeado a la vista.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Queso y dulce (vigilante)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$4.000</span></div>
+          <p class="menu-item__desc">El postre del asador: queso fresco con dulce de membrillo o batata.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Helado artesanal (2 bochas)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.900</span></div>
+          <p class="menu-item__desc">Consultá los sabores del día. Siempre hay dulce de leche granizado.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bebidas -->
+    <div class="libro__pagina">
+      <h3 class="menu-seccion__titulo">🍷 Bebidas</h3>
+      <div class="menu-lista">
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Malbec de la casa (botella)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$9.500</span></div>
+          <p class="menu-item__desc">Tinto joven de Mendoza, ideal para acompañar la carne.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Copa de vino tinto</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$2.800</span></div>
+          <p class="menu-item__desc">Malbec o Cabernet Sauvignon.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Cerveza artesanal (pinta)</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$3.200</span></div>
+          <p class="menu-item__desc">Rubia, roja o negra, bien tirada y fresca.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Gaseosa / Agua saborizada</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$1.800</span></div>
+          <p class="menu-item__desc">Línea completa, con y sin azúcar.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Agua mineral</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$1.500</span></div>
+          <p class="menu-item__desc">Con o sin gas.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__cabecera"><span class="menu-item__nombre">Limonada casera</span><span class="menu-item__puntos"></span><span class="menu-item__precio">$2.500</span></div>
+          <p class="menu-item__desc">Con menta y jengibre, bien fría.</p>
+        </div>
+      </div>
+    </div>
+
+      </div><!-- /.libro__hojas -->
+
+      <button class="libro__btn libro__btn--anterior" type="button" aria-label="Página anterior" disabled>&lsaquo;</button>
+      <span class="libro__indicador" aria-live="polite">1 / 6</span>
+      <button class="libro__btn libro__btn--siguiente" type="button" aria-label="Página siguiente">&rsaquo;</button>
+    </div><!-- /.libro -->
+
+    <p class="menu-nota">Los precios pueden variar según disponibilidad del mercado. Todos los valores están expresados en pesos argentinos e incluyen IVA.</p>
+  </section>
+
+  <!-- ===================== Nosotros ===================== -->
+  <section class="seccion seccion--tierra" id="nosotros">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Nuestra historia</h2>
+      <p class="subtitulo-seccion">Tres generaciones alrededor del mismo fuego</p>
+
+      <div class="historia">
+        <div class="historia__texto">
+          <h3>Dónde empezó todo</h3>
+          <p>Corría el año 1962 cuando Don José Maldonado, hijo de inmigrantes y criado entre los fogones del campo, abrió una pequeña parrilla en una esquina de Palermo. Apenas seis mesas, una parrilla de hierro y una promesa: que nadie se levantara de esa mesa sin haber comido como en casa.</p>
+          <p>Lo que empezó como un changüí de barrio se ganó, plato a plato, el cariño de los vecinos. La receta nunca fue secreta: leña buena, carne noble y la paciencia de quien entiende que el asado no se apura.</p>
+        </div>
+        <img src="images/historia-fundador-1962.jpg" onerror="this.onerror=null;this.src='images/historia-fundador-1962.svg'" alt="Fotografía antigua del fundador junto a la parrilla original" loading="lazy" decoding="async" class="historia__foto" />
+      </div>
+
+      <div class="historia historia--invertida" style="margin-top: 3rem;">
+        <div class="historia__texto">
+          <h3>Una tradición que se hereda</h3>
+          <p>Con los años, la parrilla creció junto a la familia. Los hijos de Don José aprendieron a leer el fuego mirándolo trabajar, y luego los nietos hicieron lo mismo. Hoy, la tercera generación mantiene viva cada costumbre: el mismo saludo en la puerta, el mismo respeto por el producto y la misma sobremesa larga.</p>
+          <p>Cambió el tamaño del salón, pero no el alma. Seguimos cortando la carne como nos enseñaron, seguimos encendiendo el fuego temprano y seguimos tratando a cada comensal como a un viejo amigo que vuelve a casa.</p>
+        </div>
+        <img src="images/historia-familia-parrilla.jpg" onerror="this.onerror=null;this.src='images/historia-familia-parrilla.svg'" alt="La familia reunida en el salón del restaurante" loading="lazy" decoding="async" class="historia__foto" />
+      </div>
+
+      <blockquote class="cita" style="color: var(--madera);">
+        “El asado no es solo comida. Es juntar a la gente, tomarse el tiempo y compartir. Ese es todo el secreto.”
+        <cite style="color: var(--terracota);">Don José Maldonado, fundador</cite>
+      </blockquote>
+
+      <div class="historia" style="margin-top: 1rem;">
+        <img src="images/asador-principal.jpg" onerror="this.onerror=null;this.src='images/asador-principal.svg'" alt="El asador principal atendiendo la parrilla" loading="lazy" decoding="async" class="historia__foto" />
+        <div class="historia__texto">
+          <h3>El asador principal</h3>
+          <p>Al frente de la parrilla está <strong>José (nieto)</strong>, el asador que heredó el oficio y el apodo del abuelo. Se levanta con el sol, elige personalmente los cortes y enciende la leña de quebracho mucho antes de que llegue el primer cliente.</p>
+          <p>Dicen que tiene un sexto sentido para el punto de la carne: sabe, con solo mirar las brasas, cuándo un bife está listo. No usa reloj ni termómetro. Usa la mano, el olfato y sesenta años de tradición metidos en la memoria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Contacto ===================== -->
+  <section class="seccion contenedor" id="contacto">
+    <h2 class="titulo-seccion">Contacto y ubicación</h2>
+    <p class="subtitulo-seccion">Te esperamos con el fuego encendido</p>
+
+    <div class="contacto-grid">
+      <!-- Info -->
+      <div>
+        <ul class="info-lista">
+          <li>
+            <span class="info-lista__icono">📍</span>
+            <div>
+              <div class="info-lista__titulo">Dirección</div>
+              <div class="info-lista__dato">Av. de los Asadores 1234<br />Palermo, Ciudad Autónoma de Buenos Aires</div>
+            </div>
+          </li>
+          <li>
+            <span class="info-lista__icono">🕑</span>
+            <div>
+              <div class="info-lista__titulo">Horarios de atención</div>
+              <div class="info-lista__dato">
+                Martes a Jueves: 12:00 – 15:30 y 20:00 – 24:00<br />
+                Viernes y Sábados: 12:00 – 01:00<br />
+                Domingos: 12:00 – 16:00<br />
+                Lunes: cerrado
+              </div>
+            </div>
+          </li>
+          <li>
+            <span class="info-lista__icono">📞</span>
+            <div>
+              <div class="info-lista__titulo">Teléfono</div>
+              <div class="info-lista__dato">(011) 4567-8900</div>
+            </div>
+          </li>
+          <li>
+            <span class="info-lista__icono">💬</span>
+            <div>
+              <div class="info-lista__titulo">WhatsApp</div>
+              <div class="info-lista__dato">+54 9 11 2345-6789</div>
+            </div>
+          </li>
+          <li>
+            <span class="info-lista__icono">✉️</span>
+            <div>
+              <div class="info-lista__titulo">Email</div>
+              <div class="info-lista__dato">hola@parrilladonjose.com.ar</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="info-lista__titulo" style="margin-bottom: 0.5rem;">Seguinos</div>
+        <div class="redes">
+          <a href="#" class="red" aria-label="Instagram">📷 Instagram</a>
+          <a href="#" class="red" aria-label="Facebook">👍 Facebook</a>
+          <a href="#" class="red" aria-label="WhatsApp">💬 WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Mapa -->
+      <div>
+        <p style="color: var(--cuero); margin-bottom: 1rem;">
+          Estamos en pleno Palermo, a pasos del subte y con estacionamiento en la zona.
+          Tocá el mapa para abrir la ruta en Google Maps.
+        </p>
+        <iframe
+          class="mapa mapa--alto"
+          title="Ubicación de Parrilla Don José en el mapa"
+          src="https://www.google.com/maps?q=Buenos+Aires,+Argentina&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Reservar ===================== -->
+  <section class="seccion seccion--oscura reserva" id="reservar">
+    <div class="reserva-card">
+      <!-- Fondo animado de brasas (decorativo) -->
+      <div class="hero__fuego reserva-card__fuego" aria-hidden="true">
+        <div class="hero__lecho"></div>
+        <span class="hero__brasa" style="--x:10%; --s:5px; --d:6.5s; --delay:0s;   --dx:24px;  --blur:0px;  --op:.9"></span>
+        <span class="hero__brasa" style="--x:20%; --s:3px; --d:8s;   --delay:1.4s; --dx:-18px; --blur:1.5px; --op:.6"></span>
+        <span class="hero__brasa" style="--x:30%; --s:6px; --d:6s;   --delay:.7s;  --dx:30px;  --blur:0px;  --op:.95"></span>
+        <span class="hero__brasa" style="--x:40%; --s:4px; --d:7.2s; --delay:2.3s; --dx:-26px; --blur:.5px; --op:.8"></span>
+        <span class="hero__brasa" style="--x:50%; --s:7px; --d:5.6s; --delay:.3s;  --dx:20px;  --blur:0px;  --op:1"></span>
+        <span class="hero__brasa" style="--x:60%; --s:3px; --d:8.4s; --delay:3s;   --dx:-30px; --blur:1.5px; --op:.6"></span>
+        <span class="hero__brasa" style="--x:70%; --s:5px; --d:6.4s; --delay:1s;   --dx:28px;  --blur:0px;  --op:.9"></span>
+        <span class="hero__brasa" style="--x:80%; --s:4px; --d:7.6s; --delay:2s;   --dx:-20px; --blur:.5px; --op:.8"></span>
+        <span class="hero__brasa" style="--x:90%; --s:6px; --d:6s;   --delay:.5s;  --dx:24px;  --blur:0px;  --op:.95"></span>
+        <span class="hero__brasa" style="--x:35%; --s:3px; --d:8.8s; --delay:4s;   --dx:16px;  --blur:2px;  --op:.5"></span>
+        <span class="hero__brasa" style="--x:65%; --s:4px; --d:7s;   --delay:3.6s; --dx:-22px; --blur:1px;  --op:.7"></span>
+      </div>
+
+      <div class="reserva-card__contenido">
+        <h2 class="reserva-card__titulo">Reservá tu mesa</h2>
+        <p class="reserva-card__intro">Completá tus datos y te confirmamos la reserva por WhatsApp.</p>
+
+        <form class="formulario-reserva" id="form-reserva" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required />
+          </div>
+
+          <div class="campo-doble">
+            <div class="campo">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11 2345-6789" required />
+            </div>
+            <div class="campo">
+              <label for="whatsapp">WhatsApp (para confirmar)</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="Ej: +54 9 11 2345-6789" required />
+            </div>
+          </div>
+
+          <div class="campo-doble">
+            <div class="campo">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" required />
+            </div>
+            <div class="campo">
+              <label for="personas">Cantidad de personas</label>
+              <select id="personas" name="personas" required>
+                <option value="" disabled selected>Elegí…</option>
+                <option value="1">1 persona</option>
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5 personas</option>
+                <option value="6">6 personas</option>
+                <option value="7+">7 o más</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="comentario">Comentarios (opcional)</label>
+            <textarea id="comentario" name="comentario" rows="3" placeholder="Alergias, festejos, preferencias de mesa…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--brasa" style="width: 100%;">Enviar reserva</button>
+
+          <p class="reserva-card__nota">
+            * Sitio de demostración: el formulario no envía datos reales. Para reservar de verdad, escribinos por WhatsApp al +54 9 11 2345-6789.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Pie ===================== -->
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <div>
+        <div class="pie__marca-nombre">Parrilla Don <span>José</span></div>
+        <p>El verdadero sabor del asado argentino, a las brasas y con la tradición de siempre. Te esperamos con la mesa puesta y el fuego encendido.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#reservar">Reservar mesa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visitanos</h4>
+        <ul>
+          <li>Av. de los Asadores 1234</li>
+          <li>Palermo, Buenos Aires</li>
+          <li>Tel: (011) 4567-8900</li>
+          <li>Mar. a Dom. · 12 a 24 h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="contenedor pie__base">
+      <p>© 2026 Parrilla Don José. Todos los derechos reservados. · Sitio ficticio con fines de demostración.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>
+    /* Validación mínima y mensaje de confirmación (demo, sin envío real) */
+    (function () {
+      var form = document.getElementById('form-reserva');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        var nombre = document.getElementById('nombre').value.trim();
+        alert('¡Gracias, ' + (nombre || 'estimado/a') + '! Recibimos tu solicitud de reserva. Te escribimos por WhatsApp para confirmarla. (Demostración: no se envían datos reales.)');
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+PARRILLA DON JOSÉ — Imágenes
+============================
+
+Ya hay PLACEHOLDERS ".svg" en esta carpeta para que el sitio se vea completo.
+Cada foto del sitio apunta primero a un ".jpg" (tu foto real) y, si ese .jpg
+no existe, muestra automáticamente el ".svg" de muestra. O sea:
+
+  → Para poner tu foto real, guardá tu imagen en esta carpeta con el MISMO
+    nombre pero terminación .jpg. No hace falta tocar el HTML: se muestra sola.
+
+Fotos que podés reemplazar (nombre .jpg a usar):
+------------------------------------------------
+INICIO (index.html) — platos destacados:
+- plato-asado-de-tira.jpg
+- plato-bife-de-chorizo.jpg
+- plato-provoleta.jpg
+- plato-mollejas.jpg
+
+NOSOTROS (nosotros.history.html):
+- historia-fundador-1962.jpg
+- historia-familia-parrilla.jpg
+- asador-principal.jpg
+
+Tamaño sugerido: ~800x600 px o mayor, JPG optimizado para web.
+
+Fondos opcionales (CSS)
+-----------------------
+- El HERO de la portada ahora usa una ANIMACIÓN de fuego por CSS, así que ya
+  NO necesita foto de fondo.
+- hero-brasas-carbon.jpg .... fondo del banner superior de menú/nosotros/contacto.
+                              Si no lo ponés, se ve un fondo marrón oscuro (ok).
+- textura-madera.jpg ........ textura de la franja "¿Nos visitás esta noche?".
+                              Si no lo ponés, se ve madera oscura lisa (ok).
+  (Estos dos se referencian en css/styles.css; llevan una capa oscura encima,
+   por eso funcionan aunque falten.)
+
+Nota: los .svg son solo de muestra. Podés borrarlos cuando pongas tus fotos
+reales, pero conviene dejarlos como respaldo por si algún .jpg falta.
