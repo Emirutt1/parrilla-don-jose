@@ -206,3 +206,59 @@
     refrescar();
   });
 })();
+
+/* ==========================================================================
+   Video del hero: loop sin cortes por crossfade entre dos videos
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var a = document.querySelector('.hero__video--a');
+    var b = document.querySelector('.hero__video--b');
+    if (!a || !b) return;
+
+    // Respeta "menos movimiento": pausa el video y deja el póster fijo
+    var reduce =
+      window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) {
+      try { a.removeAttribute('autoplay'); a.pause(); } catch (e) {}
+      return;
+    }
+
+    var FADE = 0.8; // segundos de fundido antes del final
+    a.loop = false;
+    b.loop = false;
+    var actual = a;
+    var siguiente = b;
+    var cambiando = false;
+
+    function alTiempo(e) {
+      var v = e.target;
+      if (v !== actual || cambiando || !v.duration) return;
+      if (v.currentTime >= v.duration - FADE) {
+        cambiando = true;
+        try { siguiente.currentTime = 0; } catch (_) {}
+        var pr = siguiente.play();
+        if (pr && pr.catch) pr.catch(function () {});
+        siguiente.style.opacity = '1';
+        actual.style.opacity = '0';
+        var previo = actual;
+        var nuevo = siguiente;
+        setTimeout(function () {
+          actual = nuevo;
+          siguiente = previo;
+          cambiando = false;
+        }, FADE * 1000);
+      }
+    }
+
+    a.addEventListener('timeupdate', alTiempo);
+    b.addEventListener('timeupdate', alTiempo);
+
+    // Asegura el arranque (fallback de autoplay)
+    var p = a.play();
+    if (p && p.catch) p.catch(function () {});
+  });
+})();

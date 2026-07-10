@@ -37,8 +37,15 @@
 
   <!-- ===================== Inicio / Hero ===================== -->
   <section class="hero" id="inicio">
-    <!-- Fondo: foto de fuego animada (zoom + parpadeo) con brasas ascendentes -->
-    <div class="hero__bg" aria-hidden="true"></div>
+    <!-- Fondo: video de fuego en loop sin cortes (crossfade entre dos videos) -->
+    <div class="hero__bg" aria-hidden="true">
+      <video class="hero__video hero__video--a" autoplay muted loop playsinline preload="auto" poster="images/hero-fuego.jpg">
+        <source src="videos/hero-fuego.mp4" type="video/mp4" />
+      </video>
+      <video class="hero__video hero__video--b" muted playsinline preload="auto">
+        <source src="videos/hero-fuego.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="hero__fuego" aria-hidden="true">
       <div class="hero__lecho"></div>
       <span class="hero__brasa" style="--x:6%;  --s:3px; --d:8s;   --delay:0s;   --dx:24px;  --blur:1.5px; --op:.6"></span>
