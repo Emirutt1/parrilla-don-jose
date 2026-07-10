@@ -126,6 +126,9 @@
 
     var hojas = libro.querySelector('.libro__hojas');
     var mqMovil = window.matchMedia('(max-width: 760px)');
+    var tabs = Array.prototype.slice.call(
+      document.querySelectorAll('.carta-tab')
+    );
 
     var reduce =
       window.matchMedia &&
@@ -140,6 +143,12 @@
       if (indicador) {
         indicador.textContent = actual + 1 + ' / ' + paginas.length;
       }
+      tabs.forEach(function (t) {
+        t.classList.toggle(
+          'carta-tab--activa',
+          parseInt(t.getAttribute('data-pagina'), 10) === actual
+        );
+      });
     }
 
     function activar(indice) {
@@ -214,6 +223,15 @@
     });
     btnAnt.addEventListener('click', function () {
       ir(actual - 1, -1);
+    });
+
+    // Índice de categorías: salta directo a la página elegida
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        var destino = parseInt(t.getAttribute('data-pagina'), 10);
+        if (isNaN(destino)) return;
+        ir(destino, destino > actual ? 1 : -1);
+      });
     });
 
     // Flechas del teclado (solo si el libro está a la vista y no se está escribiendo)
