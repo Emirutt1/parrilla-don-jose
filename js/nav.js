@@ -124,6 +124,9 @@
     var indicador = libro.querySelector('.libro__indicador');
     if (paginas.length < 2 || !btnAnt || !btnSig) return;
 
+    var hojas = libro.querySelector('.libro__hojas');
+    var mqMovil = window.matchMedia('(max-width: 760px)');
+
     var reduce =
       window.matchMedia &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -145,6 +148,27 @@
       });
     }
 
+    // En celular, ajusta el alto del libro al contenido de la página activa
+    // (se ve completa, sin scroll interno). En escritorio usa el alto del CSS.
+    function altoDe(page) {
+      if (page.classList.contains('libro__pagina--tapa')) {
+        return Math.min(Math.round(window.innerHeight * 0.62), 520);
+      }
+      var lista = page.querySelector('.menu-lista');
+      if (!lista) return 460;
+      var padAbajo = parseFloat(getComputedStyle(page).paddingBottom) || 0;
+      return Math.ceil(lista.offsetTop + lista.offsetHeight + padAbajo + 6);
+    }
+
+    function ajustarAlto(indice) {
+      if (!hojas) return;
+      if (mqMovil.matches) {
+        hojas.style.height = altoDe(paginas[indice]) + 'px';
+      } else {
+        hojas.style.height = '';
+      }
+    }
+
     function ir(destino, dir) {
       if (animando || destino < 0 || destino >= paginas.length || destino === actual) {
         return;
@@ -153,6 +177,7 @@
       var sale = paginas[actual];
       var entra = paginas[destino];
       entra.classList.add('libro__pagina--activa');
+      ajustarAlto(destino);
 
       // Sin animación (accesibilidad): cambio directo
       if (reduce) {
@@ -204,6 +229,13 @@
     });
 
     refrescar();
+    ajustarAlto(actual);
+
+    window.addEventListener('resize', function () { ajustarAlto(actual); });
+    window.addEventListener('load', function () { ajustarAlto(actual); });
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(function () { ajustarAlto(actual); });
+    }
   });
 })();
 

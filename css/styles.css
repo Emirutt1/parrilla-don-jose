@@ -905,8 +905,14 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 600px) {
+  /* El alto lo ajusta el JS al contenido de cada página (sin scroll interno).
+     Este 80vh es solo un respaldo por si el JS no corriera. */
   .libro__hojas { height: 80vh; }
-  .libro__pagina { padding: 1.6rem 1.4rem 2rem; }
+  .libro__pagina { padding: 1.5rem 1.3rem 1.8rem; }
+  .libro__pagina .menu-seccion__titulo { font-size: 1.7rem; }
+  .libro__pagina .menu-item__nombre { font-size: 1.1rem; }
+  .libro__pagina .menu-item__desc { font-size: 0.95rem; }
+  .libro__pagina .menu-item { padding: 0.7rem 0; }
 }
 
 /* ==========================================================================
